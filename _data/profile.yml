@@ -1,0 +1,83 @@
+primary_name: "Hyojin Im"
+primary_name_ko: "임효진"
+primary_name_en: "Hyojin Im"
+navbar_name: "Hyojin Im"
+navbar_name_ko: "임효진"
+navbar_name_en: "Hyojin Im"
+
+positions:
+- name_ko: AI 엔지니어
+  name_en: AI Engineer
+
+email: "hyojinnnnim@gmail.com"
+github: HyojinIm
+cv_link: /assets/docs/CV.pdf
+
+short_bio_text_justify: false
+short_bio_ko: >-
+  <p>
+    Python 기반 AI/LLM 추론 파이프라인과 Backend API를 설계·운영하는 인공지능 엔지니어입니다.
+    OpenAI·Gemini 멀티모달 LLM, JSON Schema 구조화 출력, Vision-LLM 데이터 품질 자동화,
+    그리고 제조 공정 예측·제어까지 제품에 붙인 경험이 있습니다.
+  </p>
+  <p>
+    현재 (주)소울소프트에서 맞춤형 헬스케어 서비스의 음식 인식·영양 추정, 비침습 질환 예측,
+    LLM 운영 안정화를 담당하고 있습니다. 이전에는 (주)인이지에서 유리 용해로 연료 최적화 모델을
+    현장에 적용해 현장 테스트에서 연료 사용량을 3.59% 줄이고, 관련 특허를 등록했습니다.
+  </p>
+short_bio_en: >-
+  <p>
+    I am an AI engineer who designs and operates Python-based AI/LLM inference pipelines and backend APIs.
+    My work covers multimodal LLMs (OpenAI, Gemini), schema-constrained generation, Vision-LLM data-quality automation,
+    and deploying process-control models on the factory floor.
+  </p>
+  <p>
+    At SOULSOFT I work on food recognition, nutrition estimation, non-invasive disease-risk models, and LLM reliability
+    for a personalized healthcare product. Previously at INEEJI I applied a glass-furnace temperature prediction and
+    fuel-control system on site, cutting fuel use by 3.59% in plant tests and contributing to a registered patent.
+  </p>
+
+portrait_url: /assets/images/IMG_5887.jpg
+
+education:
+- name_ko: 홍익대학교
+  name_en: Hongik University
+  dept_ko: 세종
+  dept_en: Sejong, South Korea
+  position_ko: 소프트웨어융합학과 학사
+  position_en: B.S. in Software Convergence
+  date_ko: 2019.03 – 2025.02
+  date_en: Mar. 2019 – Feb. 2025
+
+experience:
+- name_ko: (주)소울소프트
+  name_en: SOULSOFT
+  dept_ko: 인공지능 개발팀
+  dept_en: AI Development Team
+  position_ko: AI 엔지니어
+  position_en: AI Engineer
+  date_ko: 2025.03 – 현재
+  date_en: Mar. 2025 – present
+- name_ko: (주)인이지
+  name_en: INEEJI
+  dept_ko: 인공지능 연구소
+  dept_en: AI Research Lab
+  position_ko: AI 엔지니어
+  position_en: AI Engineer
+  date_ko: 2021.12 – 2023.06
+  date_en: Dec. 2021 – Jun. 2023
+
+awards:
+- name_ko: >-
+    특허 제10-2640747호 — 온도 예측 및 제어 시스템을 구현하기 위한 전자 장치 및 이의 제어 방법 (공동발명, (주)인이지)
+  name_en: >-
+    Patent No. 10-2640747 — Electronic Device for Realizing a System for Predicting and Controlling Temperature and Its Control Method (Co-inventor, INEEJI)
+  date: "2024"
+- name_ko: 홍익대학교 캡스톤 프로젝트 페어 BK21 단장상 (대상) — AR 기반 모바일 가상 피팅
+  name_en: BK21 Program Director’s Award (Grand Prize), Hongik University Capstone Project Fair — AR-based mobile virtual try-on
+  date: "2022"
+
+languages:
+- name_ko: TOEIC Speaking — Advanced Low
+  name_en: TOEIC Speaking — Advanced Low
+  date: "2026"

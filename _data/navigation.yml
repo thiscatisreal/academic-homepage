@@ -1,0 +1,9 @@
+pages:
+- name: Home
+  name_ko: 홈
+  name_en: Home
+  url: /
+- name: Projects
+  name_ko: 프로젝트
+  name_en: Projects
+  url: /publications

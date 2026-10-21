@@ -1,0 +1,7 @@
+{%- assign ko = include.ko | default: include.en -%}
+{%- assign en = include.en | default: include.ko -%}
+{%- if ko == en -%}
+{{- ko -}}
+{%- else -%}
+<span class="i18n-ko">{{- ko -}}</span><span class="i18n-en">{{- en -}}</span>
+{%- endif -%}

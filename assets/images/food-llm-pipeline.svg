@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img">
+  <title>Food analysis multimodal LLM pipeline</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f7f9"/>
+      <stop offset="100%" stop-color="#eef1f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" rx="24" fill="url(#bg)"/>
+
+  <line x1="128" y1="318" x2="772" y2="318" stroke="#c5ced9" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- 1 -->
+  <line x1="128" y1="268" x2="128" y2="318" stroke="#c5ced9" stroke-width="3"/>
+  <circle cx="128" cy="318" r="9" fill="#243044"/>
+  <rect x="44" y="136" width="168" height="132" rx="16" fill="#fff" stroke="#d8dee8"/>
+  <text x="128" y="176" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a96a8">1</text>
+  <text x="128" y="206" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#243044">입력</text>
+  <text x="128" y="236" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="13" fill="#6b7789">사진 · 텍스트</text>
+
+  <!-- 2 -->
+  <line x1="342" y1="268" x2="342" y2="318" stroke="#c5ced9" stroke-width="3"/>
+  <circle cx="342" cy="318" r="9" fill="#243044"/>
+  <rect x="258" y="136" width="168" height="132" rx="16" fill="#fff" stroke="#d8dee8"/>
+  <text x="342" y="176" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a96a8">2</text>
+  <text x="342" y="206" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#243044">게이트</text>
+  <text x="342" y="236" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="13" fill="#6b7789">동시성 상한</text>
+
+  <!-- 3 -->
+  <line x1="558" y1="268" x2="558" y2="318" stroke="#c5ced9" stroke-width="3"/>
+  <circle cx="558" cy="318" r="9" fill="#243044"/>
+  <rect x="458" y="108" width="200" height="160" rx="16" fill="#243044"/>
+  <text x="558" y="138" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#8aa0c0">3</text>
+  <text x="558" y="162" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">추론</text>
+  <rect x="478" y="176" width="160" height="36" rx="9" fill="#37507a"/>
+  <text x="558" y="200" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="14" fill="#e7eeff">primary</text>
+  <rect x="478" y="218" width="160" height="36" rx="9" fill="#2f3d54"/>
+  <text x="558" y="242" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="14" fill="#b7c4d6">fallback</text>
+
+  <!-- 4 -->
+  <line x1="772" y1="268" x2="772" y2="318" stroke="#c5ced9" stroke-width="3"/>
+  <circle cx="772" cy="318" r="9" fill="#243044"/>
+  <rect x="688" y="136" width="168" height="132" rx="16" fill="#fff" stroke="#c5ddd0"/>
+  <text x="772" y="176" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#6fb891">4</text>
+  <text x="772" y="206" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f6b44">JSON</text>
+  <text x="772" y="236" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="13" fill="#6b7789">항목 · 영양 · 등급</text>
+
+  <rect x="190" y="372" width="520" height="80" rx="16" fill="#fff" stroke="#d8dee8"/>
+  <text x="450" y="406" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#243044">같은 deadline · JSON Schema</text>
+  <text x="450" y="432" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="13" fill="#6b7789">120초 안에 응답하거나 중단</text>
+</svg>

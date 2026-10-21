@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img">
+  <title>Vision-LLM image filter pipeline</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f7f9"/>
+      <stop offset="100%" stop-color="#eef1f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" rx="24" fill="url(#bg)"/>
+
+  <rect x="40" y="168" width="196" height="264" rx="18" fill="#fff" stroke="#d8dee8"/>
+  <rect x="70" y="198" width="136" height="108" rx="10" fill="#f0f3f8" stroke="#c9d2de"/>
+  <circle cx="110" cy="236" r="12" fill="#d4dce8"/>
+  <path d="M82 292 L118 250 L140 272 L160 256 L192 292 Z" fill="#b7c3d4"/>
+  <text x="138" y="338" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#243044">입력</text>
+  <text x="138" y="364" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="13" fill="#6b7789">수집 이미지</text>
+
+  <path d="M250 300 H318" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <polygon points="318,294 334,300 318,306" fill="#8a96a8"/>
+
+  <rect x="348" y="148" width="220" height="304" rx="18" fill="#243044"/>
+  <rect x="372" y="178" width="172" height="132" rx="12" fill="#2f3d54"/>
+  <text x="458" y="216" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="13" fill="#9ec5ff">{</text>
+  <text x="458" y="240" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#d7e6ff">"suitable": ...</text>
+  <text x="458" y="264" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#d7e6ff">"reason": ...</text>
+  <text x="458" y="288" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="13" fill="#9ec5ff">}</text>
+  <text x="458" y="348" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#fff">VLM 판정</text>
+  <text x="458" y="376" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="13" fill="#b7c4d6">구조화 JSON</text>
+
+  <path d="M582 300 H620" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <path d="M620 300 V214 H658" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <path d="M620 300 V386 H658" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <polygon points="658,208 674,214 658,220" fill="#8a96a8"/>
+  <polygon points="658,380 674,386 658,392" fill="#8a96a8"/>
+
+  <rect x="688" y="128" width="172" height="172" rx="18" fill="#fff" stroke="#c5ddd0"/>
+  <circle cx="774" cy="178" r="18" fill="#e7f6ee"/>
+  <path d="M766 178 l6 6 12 -14" fill="none" stroke="#2f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="774" y="228" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1f6b44">적합</text>
+  <text x="774" y="254" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="13" fill="#6b7789">학습에 사용</text>
+
+  <rect x="688" y="320" width="172" height="172" rx="18" fill="#fff" stroke="#e4cfcf"/>
+  <circle cx="774" cy="370" r="18" fill="#f8ecec"/>
+  <path d="M768 364 l12 12 M780 364 l-12 12" stroke="#c45c5c" stroke-width="3" stroke-linecap="round"/>
+  <text x="774" y="420" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#9a3b3b">부적합</text>
+  <text x="774" y="446" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, sans-serif" font-size="13" fill="#6b7789">제외</text>
+</svg>

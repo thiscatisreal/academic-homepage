@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img">
+  <title>Non-invasive metabolic syndrome risk pipeline</title>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f7f9"/>
+      <stop offset="100%" stop-color="#eef1f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" rx="24" fill="url(#bg2)"/>
+
+  <!-- device -->
+  <rect x="48" y="208" width="168" height="184" rx="18" fill="#fff" stroke="#d8dee8"/>
+  <rect x="86" y="238" width="92" height="66" rx="10" fill="#f0f3f8" stroke="#c9d2de"/>
+  <circle cx="106" cy="258" r="6" fill="#c9d2de"/>
+  <circle cx="158" cy="258" r="6" fill="#c9d2de"/>
+  <circle cx="106" cy="286" r="6" fill="#c9d2de"/>
+  <circle cx="158" cy="286" r="6" fill="#c9d2de"/>
+  <text x="132" y="340" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#243044">체지방계</text>
+  <text x="132" y="364" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" fill="#6b7789">체성분 · 설문</text>
+
+  <path d="M226 300 H266" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <polygon points="266,294 282,300 266,306" fill="#8a96a8"/>
+
+  <!-- features -->
+  <rect x="294" y="208" width="168" height="184" rx="18" fill="#fff" stroke="#d8dee8"/>
+  <g fill="#cfd8e4">
+    <rect x="322" y="240" width="112" height="9" rx="4.5"/>
+    <rect x="322" y="258" width="92" height="9" rx="4.5"/>
+    <rect x="322" y="276" width="104" height="9" rx="4.5"/>
+    <rect x="322" y="294" width="78" height="9" rx="4.5"/>
+  </g>
+  <text x="378" y="344" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#243044">비침습 피처 12개</text>
+  <text x="378" y="366" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" fill="#6b7789">no blood test</text>
+
+  <path d="M472 300 H512" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <polygon points="512,294 528,300 512,306" fill="#8a96a8"/>
+
+  <!-- model -->
+  <rect x="540" y="180" width="180" height="240" rx="18" fill="#243044"/>
+  <g stroke="#7d8ca6" stroke-width="2.5" fill="none">
+    <path d="M630 216 V246"/>
+    <path d="M630 246 H586 V276"/>
+    <path d="M630 246 H674 V276"/>
+    <path d="M586 276 H562 V302"/>
+    <path d="M586 276 H610 V302"/>
+    <path d="M674 276 H650 V302"/>
+    <path d="M674 276 H698 V302"/>
+  </g>
+  <g fill="#9ec5ff">
+    <circle cx="630" cy="212" r="6"/>
+    <circle cx="586" cy="274" r="5"/>
+    <circle cx="674" cy="274" r="5"/>
+  </g>
+  <g fill="#d7e6ff">
+    <circle cx="562" cy="306" r="4"/>
+    <circle cx="610" cy="306" r="4"/>
+    <circle cx="650" cy="306" r="4"/>
+    <circle cx="698" cy="306" r="4"/>
+  </g>
+  <text x="630" y="360" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#fff">CatBoost</text>
+  <text x="630" y="384" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="12" fill="#b7c4d6">class weight</text>
+
+  <path d="M730 300 H766" stroke="#8a96a8" stroke-width="3" fill="none"/>
+  <polygon points="766,294 782,300 766,306" fill="#8a96a8"/>
+
+  <!-- risk -->
+  <rect x="794" y="208" width="66" height="184" rx="18" fill="#fff" stroke="#c5ddd0"/>
+  <rect x="816" y="238" width="22" height="104" rx="11" fill="#eef4f0"/>
+  <rect x="816" y="272" width="22" height="70" rx="11" fill="#6fb891"/>
+  <text x="827" y="368" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f6b44">위험도</text>
+
+  <text x="450" y="474" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Helvetica, Arial, sans-serif" font-size="14" fill="#6b7789">AUC 0.8586  ·  6개 질환 확장</text>
+</svg>

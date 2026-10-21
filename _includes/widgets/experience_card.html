@@ -1,0 +1,97 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <div class="row" data-masonry='{"percentPosition": true }'>
+                    {% if site.data.profile.education %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>{% include i18n.html ko=site.data.i18n.ko.education en=site.data.i18n.en.education %}</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.education %}
+                                <li class="media mb-1">
+                                    {% if item.logo %}
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name_en | default: item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% endif %}
+                                    <div class="media-body">
+                                        <div>{% include i18n.html ko=item.name_ko en=item.name_en %}{% unless item.name_ko or item.name_en %}{{ item.name }}{% endunless %}</div>
+                                        <div class="small">{% include i18n.html ko=item.dept_ko en=item.dept_en %}{% unless item.dept_ko or item.dept_en %}{{ item.dept }}{% endunless %}</div>
+                                        <div class="small d-flex">
+                                            <div>{% include i18n.html ko=item.position_ko en=item.position_en %}{% unless item.position_ko or item.position_en %}{{ item.position }}{% endunless %}</div>
+                                            <div class="mt-auto ml-auto no-break"><em>{% include i18n.html ko=item.date_ko en=item.date_en %}{% unless item.date_ko or item.date_en %}{{ item.date }}{% endunless %}</em></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.experience %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>{% include i18n.html ko=site.data.i18n.ko.experience en=site.data.i18n.en.experience %}</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.experience %}
+                                <li class="media mb-1">
+                                    {% if item.logo %}
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% endif %}
+                                    <div class="media-body">
+                                        <div>{% include i18n.html ko=item.name_ko en=item.name_en %}{% unless item.name_ko or item.name_en %}{{ item.name }}{% endunless %}</div>
+                                        <div class="small">{% include i18n.html ko=item.dept_ko en=item.dept_en %}{% unless item.dept_ko or item.dept_en %}{{ item.dept }}{% endunless %}</div>
+                                        <div class="small d-flex">
+                                            <div>{% include i18n.html ko=item.position_ko en=item.position_en %}{% unless item.position_ko or item.position_en %}{{ item.position }}{% endunless %}</div>
+                                            <div class="mt-auto ml-auto no-break"><em>{% include i18n.html ko=item.date_ko en=item.date_en %}{% unless item.date_ko or item.date_en %}{{ item.date }}{% endunless %}</em></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.awards %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>{% include i18n.html ko=site.data.i18n.ko.awards en=site.data.i18n.en.awards %}</h6>
+                            <ul class="list small pl-3 mb-1">
+                                {% for item in site.data.profile.awards %}
+                                <li>
+                                    <div class="d-flex">
+                                        <div>{% include i18n.html ko=item.name_ko en=item.name_en %}{% unless item.name_ko or item.name_en %}{{ item.name }}{% endunless %}</div>
+                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.languages %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>{% include i18n.html ko=site.data.i18n.ko.languages en=site.data.i18n.en.languages %}</h6>
+                            <ul class="list small pl-3 mb-1">
+                                {% for item in site.data.profile.languages %}
+                                <li>
+                                    <div class="d-flex">
+                                        <div>{% include i18n.html ko=item.name_ko en=item.name_en %}{% unless item.name_ko or item.name_en %}{{ item.name }}{% endunless %}</div>
+                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

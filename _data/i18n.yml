@@ -1,0 +1,30 @@
+ko:
+  home: 홈
+  projects: 프로젝트
+  education: 학력
+  experience: 경력
+  awards: 수상 및 특허
+  languages: 어학
+  selected_projects: 주요 프로젝트
+  view_all: 전체 보기
+  all_projects: 전체 프로젝트
+  last_updated: 최종 수정
+  menu: 메뉴
+  details: 자세히
+  back_to_projects: 프로젝트 목록
+  cv: CV
+en:
+  home: Home
+  projects: Projects
+  education: Education
+  experience: Experience
+  awards: Honors & Awards
+  languages: Language
+  selected_projects: Selected Projects
+  view_all: view all
+  all_projects: All projects
+  last_updated: Last updated
+  menu: Menu
+  details: Details
+  back_to_projects: All projects
+  cv: CV

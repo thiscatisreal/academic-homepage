@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
+    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}"><strong>{% include i18n.html ko=site.data.profile.navbar_name_ko en=site.data.profile.navbar_name_en %}</strong></a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> <span class="i18n-ko">{{ site.data.i18n.ko.menu }}</span><span class="i18n-en">{{ site.data.i18n.en.menu }}</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto align-items-sm-center">
+                {% for item in site.data.navigation.pages %}
+                <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
+                    <a class="nav-link" href="{{ item.url | relative_url }}">{% include i18n.html ko=item.name_ko en=item.name_en %}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item ml-sm-2 mt-2 mt-sm-0 d-flex align-items-center">
+                    <div class="lang-toggle" role="group" aria-label="Language">
+                        <button type="button" class="lang-btn" data-set-lang="ko">KO</button>
+                        <span class="lang-toggle-sep" aria-hidden="true">/</span>
+                        <button type="button" class="lang-btn" data-set-lang="en">EN</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
